@@ -1,5 +1,5 @@
 -- Robaaed Afred Tanik
---Id2213081048
+
 
 CREATE TABLE departments (
     department_id INT PRIMARY KEY,
@@ -34,20 +34,19 @@ VALUES
 (2, 'Account'),
 (3, 'IT');
 
-
-INSERT INTO employees (employee_id, name, department, salary)
+INSERT INTO employees (employee_id, name, department_id, salary)
 VALUES
-(1, 'Tanvir', 'Sales', 55000),
-(2, 'Nusrat', 'Account', 48000),
-(3, 'Farhan', 'Sales', 61000),
-(4, 'Mitu', 'IT', 58000),
-(5, 'Rafiq', 'Account', 45000),
-(6, 'Jahid', 'IT', 75000),
-(7, 'Sumon', 'Sales', 62000),
-(8, 'Mithila', 'Account', 70000),
-(9, 'Anika', 'IT', 65000),
-(10, 'Hasan', 'Account', 52000),
-(11, 'Nadia', 'Sales', 54000);
+(1, 'Noor Hossain', 1, 55000),
+(2, 'Tamim Rahman', 2, 48000),
+(3, 'Fakir Shohan', 1, 61000),
+(4, 'Ibrahim Rafi', 3, 58000),
+(5, 'Shoyeb Ahmed ', 2, 45000),
+(6, 'Jahid Hasan', 3, 75000),
+(7, 'Zahangir Alam', 1, 62000),
+(8, 'Ajmot Ullah', 2, 70000),
+(9, 'Ripon Sarker', 3, 65000),
+(10, 'Rokib Sarker', 2, 52000),
+(11, 'Ikbal Hossen', 1, 54000);
 
 
 INSERT INTO customers (customer_id, customer_name)
@@ -59,7 +58,7 @@ VALUES
 (5, 'Arif Rehman'),
 (6, 'Amina Begum'),
 (7, 'Mahbub Alam'),
-(8, 'Alim Uddin'),
+(8, 'Alim Uddin Buddin'),
 (9, 'Anowar Hossain'),
 (10, 'Rahman Sheikh'),
 (11, 'Sakib Khan');
@@ -87,9 +86,9 @@ SELECT * FROM employees WHERE salary > 50000;
 
 SELECT * FROM customers WHERE customer_name LIKE 'A%';
 
-SELECT * FROM employees WHERE customer_name LIKE '%A%';
+SELECT * FROM customers WHERE customer_name LIKE '%A%';
 
-SELECT * FROM employees WHERE customer_name LIKE '%A';
+SELECT * FROM customers WHERE customer_name LIKE '%A';
 
 -- Task 3: 
 
