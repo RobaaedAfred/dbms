@@ -82,13 +82,11 @@ INSERT INTO takes (ID, course_id, sec_id, semester, year, grade) VALUES
 ('54321', 'C105', 'S1', 'Fall', 2017, 'B'),
 ('4321', 'C106', 'S1', 'Fall', 2017, 'A'),
 ('321', 'C101', 'S1', 'Fall', 2017, 'A-');
-CREATE TABLE  (
+CREATE TABLE  section(
     course_id CHAR(5),
     sec_id CHAR(5),
     semester VARCHAR(6),
     year INT,
-    building VARCHAR(20),
-    room_number VARCHAR(10),
     time_slot_id VARCHAR(5),
     PRIMARY KEY (course_id, sec_id, semester, year)
 );
